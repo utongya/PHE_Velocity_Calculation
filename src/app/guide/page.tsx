@@ -37,7 +37,7 @@ export default function GuidePage() {
 
               <div className="flex flex-col md:flex-row items-start gap-6 bg-white p-4 rounded-lg shadow-sm">
                 <img
-                  src="/images/phe-diagram.png"
+                  src={`${process.env.NODE_ENV === 'production' ? '/PHE_Velocity_Calculation' : ''}/images/phe-diagram.png`}
                   alt="Plate Heat Exchanger schematic and parameter table"
                   className="w-full md:w-1/2 rounded-lg border border-gray-200 shadow-sm"
                 />
