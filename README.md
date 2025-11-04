@@ -118,6 +118,41 @@ PHE_Velocity_Calculation/
 
 This project is for educational and engineering purposes.
 
+## Deployment to GitHub Pages
+
+This application is configured for automatic deployment to GitHub Pages.
+
+### Setup GitHub Pages
+
+1. Push your code to GitHub:
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/utongya/PHE_Velocity_Calculation.git
+git push -u origin main
+```
+
+2. Enable GitHub Pages:
+   - Go to your repository settings on GitHub
+   - Navigate to "Pages" in the left sidebar
+   - Under "Build and deployment", select "GitHub Actions" as the source
+   - The app will automatically deploy when you push to the main branch
+
+3. Access your deployed app at:
+   `https://utongya.github.io/PHE_Velocity_Calculation/`
+
+### Manual Deployment
+
+To build and deploy manually:
+```bash
+npm run build
+# The static files will be in the 'out' directory
+```
+
 ## Author
+
+Developed by **Unnop Tongya**, Nalco Water
 
 Engineering calculations based on standard PHE design methodology.
